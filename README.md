@@ -1,5 +1,6 @@
-React `<Text>` component that provides enhancements over using SVG's `<text>` directly including:
+# React `<Text>` component that provides enhancements over using SVG's `<text>` directly
 
+## Features
 - Word-wrapping (when `width` prop is defined)
 - Vertical alignment (`verticalAnchor` prop)
 - Rotation (`angle` prop)
@@ -8,7 +9,7 @@ React `<Text>` component that provides enhancements over using SVG's `<text>` di
 See [demo](https://techniq.github.io/react-svg-text/) to see how it works
 
 
-TODO:
+## TODO
 - Fix tests (jsdom does not support `getComputedTextLength()` or `getBoundingClientRect()`) and setup CI
 - Streamline build
 - Improve documentation
