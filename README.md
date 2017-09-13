@@ -1,4 +1,4 @@
-# React `<Text>` component that provides enhancements over using SVG's `<text>` directly
+# Better SVG text component for React
 
 ## Features
 - Word-wrapping (when `width` prop is defined)
