@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import reduceCSSCalc from 'reduce-css-calc';
-
 import { getStringWidth } from './utils';
 
 const calculateWordWidths = (props) => {
@@ -38,7 +37,7 @@ class Text extends Component {
     capHeight: '0.71em', // Magic number from d3
     scaleToFit: false,
     textAnchor: 'start',
-    verticalAnchor: 'end', // Maintain compat with existing charts / default SVG behavior
+    verticalAnchor: 'end', // default SVG behavior
   };
 
   state = {

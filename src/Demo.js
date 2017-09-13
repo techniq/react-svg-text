@@ -67,8 +67,27 @@ class Demo extends Component {
         </div>
 
         <div>
-          x: <input type="text" value={this.state.x} onChange={e => this.setState({ x: Number(e.target.value) })} />
-          y: <input type="text" value={this.state.y} onChange={e => this.setState({ y: Number(e.target.value) })} />
+          x:
+          <input
+            type="range"
+            style={styles.range}
+            min="0" max="300"
+            value={this.state.x}
+            onChange={e => this.setState({ x: Number(e.target.value) })}
+          /> 
+          <input type="text" value={this.state.x} onChange={e => this.setState({ x: Number(e.target.value) })} />
+        </div>
+          
+        <div>
+          y:
+          <input
+            type="range"
+            style={styles.range}
+            min="0" max="200"
+            value={this.state.y}
+            onChange={e => this.setState({ y: Number(e.target.value) })}
+          /> 
+          <input type="text" value={this.state.y} onChange={e => this.setState({ y: Number(e.target.value) })} />
         </div>
 
         <div>
