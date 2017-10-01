@@ -22,6 +22,7 @@ Property | Type | Default | Description
 `verticalAnchor` | string | end | How text is vertically positioned relative to the given `x` and `y` coordinates. Options are `start`, `middle`, `end`
 `lineHeight` | string | 1em | How much space a single line of text should take up
 `capHeight` | string | 0.71em (Magic number from d3) | Defines a text metric for the font being used: the expected height of capital letters. This is necessary because of SVG, which (a) positions the bottom of the text at y, and (b) has no notion of line height. This prop should be given as a number of ems
+additional props | | | Additional props are passed down to underlying `<text>` component, including `style` and `className`
 
 ## TODO
 - Fix tests (jsdom does not support `getComputedTextLength()` or `getBoundingClientRect()`) and setup CI
