@@ -27,7 +27,7 @@
     "react": ">=15.4.2"
   },
   "scripts": {
-    "test": "jest",
+    "test": "jest --testPathIgnorePatterns *",
     "build": "NODE_ENV=production babel src -d dist",
     "storybook": "start-storybook -p 9009 -c stories",
     "build-docs": "cd stories && yarn install && cd .. && build-storybook -c stories -o docs",
