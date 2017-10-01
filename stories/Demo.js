@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Text from './Text';
+import Text from '../src/Text';
 
 class Demo extends Component {
   state = {
