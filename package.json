@@ -1,6 +1,6 @@
 {
   "name": "react-svg-text",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "homepage": "https://techniq.github.io/react-svg-text",
   "dependencies": {
     "lodash.memoize": "^4.1.2",
