@@ -1,7 +1,12 @@
 {
   "name": "react-svg-text",
   "version": "0.1.0",
-  "homepage": "https://techniq.github.io/react-svg-text",
+  "homepage": "https://techniq.github.io/react-svg-text/",
+  "repository": "techniq/react-fetch-component",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/Text.js",
   "dependencies": {
     "lodash.memoize": "^4.1.2",
     "prop-types": "^15.5.10",
@@ -28,7 +33,7 @@
   },
   "scripts": {
     "test": "jest --testPathIgnorePatterns *",
-    "build": "NODE_ENV=production babel src -d dist",
+    "build": "NODE_ENV=production babel src -d dist --ignore test.js",
     "storybook": "start-storybook -p 9009 -c stories",
     "build-docs": "cd stories && yarn install && cd .. && build-storybook -c stories -o docs",
     "deploy-docs": "gh-pages -d docs",
