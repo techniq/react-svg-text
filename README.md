@@ -6,7 +6,23 @@
 - Rotation (`angle` prop)
 - Scale-to-fit text (`scaleToFit` prop)
 
-See [demo](https://techniq.github.io/react-svg-text/) to see how it works
+## Example
+Simple demo to show off a useful feature.  Since svg `<text>` itself does not support `verticalAnchor`, normally text rendered at `0,0` would be outside the viewport and not visible.  By using `<Text>` with `verticalAnchor="start"` prop, the text will now be visible as you'd expect.
+```jsx
+import React from 'react';
+import { render } from 'react-dom';
+import Text from 'react-svg-text';
+
+const App = () => (
+  <svg>
+    <Text verticalAnchor="start">Hello world</Text>
+  </svg>
+);
+
+render(<App />, document.getElementById('root'));
+```
+
+See [demo](https://techniq.github.io/react-svg-text/) to see additional props and how they work
 
 ### Props
 Property | Type | Default | Description
