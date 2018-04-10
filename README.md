@@ -1,5 +1,7 @@
 # Better SVG text component for React
 
+**Note: Merged into [vx](https://github.com/hshoff/vx) and is now [@vx/text](https://github.com/hshoff/vx/tree/master/packages/vx-text)**
+
 ## Features
 - Word-wrapping (when `width` prop is defined)
 - Vertical alignment (`verticalAnchor` prop)
